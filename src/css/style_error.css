@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    
+}
+.glitch{
+    font-size: 150px;
+    font-weight: 600;
+    position: relative;
+    padding: 30px;
+    
+}
+.error_message{
+    font-size: 36px;
+}

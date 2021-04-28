@@ -1,0 +1,97 @@
+main{
+    min-height: 400px;
+}
+.list-enter{
+    height: 75px;
+    box-shadow: 0 15px 10px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.input-list{
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+}
+.btn-list{
+    border-radius: 5px;
+    background: #fff;
+    width: 55px;
+    height: 40px;
+    margin-left: 5px;
+}
+.div-list{
+    background: #ccc;
+    width: 55%;
+    font-size: 22px;
+    position: relative;
+    margin: 5px auto;
+    box-shadow: -10px 12px 20px grey;   
+
+}
+.checked{
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+}
+
+.checked::before{
+    content:'';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+}
+.save{
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    border-radius: 50%;
+}
+.p-list{
+    position: relative;
+    padding: 3px 8px 12px 40px;
+}
+.close{
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+.close:hover{
+    background-color: #f44336;
+    color: white;
+}
+@media (max-width:1200px){
+    .div-list{
+        width: 60%;
+    }
+}
+@media (max-width: 900px){
+    .div-list{
+        width: 70%;
+    }
+}
+@media (max-width: 750px){
+    .div-list{
+        width: 80%;
+    }
+}
+@media (max-width: 545px){
+    .div-list{
+        width: 100%;
+    }
+    .save{
+        top: 42px;
+        right: 10px;
+    }
+    .save img{
+       width: 37px;
+       height: 32px;
+    }
+}

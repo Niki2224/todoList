@@ -1,0 +1,310 @@
+.navbar-brand{
+    font-family: 'Ranga', cursive;
+    font-size:45px;    
+}
+.btn{
+    color: #000;
+}
+.nav-link{
+    font-size: 20px;
+}
+.navbar>.container-fluid{
+    display: block;
+}
+.button-top-right button{
+    font-size: 16px;
+
+}
+.select-position{
+    margin-top: 10px;
+}
+.row-margin-top-10{
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.style-element{
+    border: 1px solid #0d6efd;
+    perspective: 1000px;
+    -webkit-perspective: 1000;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+.card{
+    width: 23rem;
+    position: relative;
+}
+#language{
+    border: 1px solid #0d6efd;
+    border-radius: 3px;
+    width: 65px;
+    height: 37px;
+    margin-top: 10px;
+}
+#appearance{
+    border: 1px solid #0d6efd;
+    border-radius: 3px;
+    width: 130px;
+    height: 37px;
+}
+.front{
+    max-width: 100%;
+    min-width: 100%;
+    height: auto;
+   
+}
+.front, .back{
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+        transition: 2s;
+}
+.back {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 42%;
+    left: 0;
+}
+
+.front-rotate  {
+    transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
+}
+
+.back-rotate{
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+}
+.upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 360px;
+    height: 300px;
+    outline: 2px dashed #5d5d5d;
+    outline-offset: -12px;
+    background-color: #e0f2f7;
+    font-family: 'Segoe UI';
+    color: #1f3c44;
+}
+
+.upload-image {
+    width: 40%;
+    margin-bottom: 20px;
+    user-select: none;
+}
+.upload-container label {
+    font-weight: bold;
+}
+
+.upload-container label:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.upload-container div {
+    position: relative;
+    z-index: 10;
+}
+
+.upload-container input[type=file] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    position: absolute;
+    z-index: -10;
+}
+.upload-container input[type=file]:focus + label {	
+    outline: 1px solid #0078d7;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+.img-new{
+    width: 360px;
+    height: 300px;
+    object-fit: cover;
+}
+.img-position img{   
+    width: 35px;
+    height: 35px;
+    margin: 5px 30px 5px 15px;
+}
+.card-text, .back-text{
+    width: 88%;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.btn-card-text, .btn-card-back{
+    border-radius: 5px;
+    border: 1px solid #0d6efd;
+    background:#f8f9fa;
+}
+.footer-bg{
+    min-height: 12em;
+    color: aliceblue;
+}
+.footer-info{
+    font-size: 26px;
+    margin-top: 15px;   
+}
+.post{
+    float: right;
+}
+.card-img{
+    width: 260px;
+    height: 200px;
+    margin: 5px 5%;
+}
+.hide{
+    display: none;
+}
+.card-hide{
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+}
+.back-arrow{
+    width: 35px;
+    height: 35px;
+    float: right;
+    margin: 35% 5% 0 0;
+}
+.out-front{   
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+}
+.out{
+    
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+.delete-back{
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin: 35% 5% 0 5%;
+}
+.wrap-modal{
+    display: none;
+    min-width: 387px;
+    min-height: 60px;
+    background: rgba(13, 110, 253, 0.5);
+    position: fixed;
+    top: 50%;
+    left:40%;
+}
+.modal-close{
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    position: absolute;
+    font-weight: 700;
+    top: 5px;
+    right: 5px;
+    border: none;
+}
+.bgShare{
+    box-shadow: 0 0 0 9999px rgba(0,0,0, 0.7)
+}
+.share-btns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.share-btns a {
+    margin: 7px 0 0 5px;
+    width: 40px;
+    height: 40px;
+}
+
+.share-btns a:not(:last-child) {
+    margin-right: 5px;
+}
+
+.share-btns a.facebook {
+    background: url("../img/share-btns.png") no-repeat left top;
+}
+
+.share-btns a.vkontakte {
+    background: url("../img/share-btns.png") no-repeat -168px top;
+}
+
+.share-btns a.ok {
+    background: url("../img/share-btns.png") no-repeat -126px top;
+}
+
+.share-btns a.twitter {
+    background: url("../img/share-btns.png") no-repeat -42px top;
+}
+
+.share-btns a.mail {
+    background: url("../img/share-btns.png") no-repeat -503px top;
+}
+
+.share-btns a.telegram {
+    background: url("../img/share-btns.png") no-repeat -672px top;
+}
+.facebook{
+    width: 40px;height: 50px;
+    display: inline-block;
+}
+.share-btns a.viber{
+    background: url("../img/viber.png") no-repeat top;
+    width: 40px;
+    height: 40px;
+}
+.cloneBlok{
+    display: none;
+}
+#add, #remove{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgba(13, 110, 253, 0.3);
+    border: none;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 900;
+    position: fixed;
+    box-shadow: 0 0 20px white;
+    display: none;
+}
+#add{
+    bottom: 260px;
+    right: 20px;
+}
+#remove{
+    bottom: 205px;
+    right: 20px;
+}
+@media (max-width: 992px) { 
+    #language{
+        position: absolute;
+        top: 15px;
+        right: 10px;
+    }
+    .wrap-modal{
+        top: 45%;
+        left: 30%;
+    }
+ }
+ @media (max-width: 785px){
+    .wrap-modal{
+        top:45%;
+        left: 5%;
+    }
+ }
+ @media (max-width: 400px){
+    .wrap-modal{
+        min-width: 350px;
+    }
+    .share-btns a{
+        margin: 7px 0 0 0;
+    }
+    
+ }
